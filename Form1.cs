@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_System_Manager.Presentation_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,33 @@ namespace Student_System_Manager
         public frmHomeScreen()
         {
             InitializeComponent();
+        }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            UserInput userInput = new UserInput();
+
+            if (edtName.Text == "" || edtStudentID.Text == "" || cmbCourse.SelectedIndex == -1 || dtpDoB.Value >= DateTime.Now)
+            {
+                MessageBox.Show("Invalid input");
+            }
+            else
+            {
+                userInput.StudentID = edtName.Text;
+                userInput.Name = edtName.Text;
+                userInput.Course = cmbCourse.SelectedItem.ToString();
+                userInput.CalcAge(dtpDoB.Value);
+            }
+
+        }
+
+        private void btnViewAllStudents_Click(object sender, EventArgs e)
+        {
+            EdittableGrid edittableGrid = new EdittableGrid();
+
+            this.Hide();
+            edittableGrid.Show();
+            
         }
     }
 }
