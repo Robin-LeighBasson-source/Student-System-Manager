@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Student_System_Manager.Presentation_Layer
 {
@@ -14,7 +15,6 @@ namespace Student_System_Manager.Presentation_Layer
         string studentID;
         int age;
         string course;
-
         
         //Encapsulation
         public string Name { get => name; set => name = value; }
@@ -33,5 +33,12 @@ namespace Student_System_Manager.Presentation_Layer
 
         //Paramaterless Constructor
         public UserInput() { }
+
+        //Methods
+        public void CalcAge(DateTime DoB)
+        {
+            Age = DateTime.Now.Year - DoB.Year;
+            MessageBox.Show("All information has been added to the textfile");
+        }
     }
 }
