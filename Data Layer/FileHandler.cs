@@ -9,7 +9,7 @@ namespace Student_System_Manager.Data_Layer
 {
     internal class FileHandler
     {
-        UserInput userInput = new UserInput();
+        
 
 
     }
