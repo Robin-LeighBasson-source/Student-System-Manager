@@ -49,6 +49,7 @@
             this.btnViewAllStudents.TabIndex = 23;
             this.btnViewAllStudents.Text = "View All Students";
             this.btnViewAllStudents.UseVisualStyleBackColor = true;
+            this.btnViewAllStudents.Click += new System.EventHandler(this.btnViewAllStudents_Click);
             // 
             // cmbCourse
             // 
@@ -70,6 +71,7 @@
             this.btnEnter.TabIndex = 21;
             this.btnEnter.Text = "Enter";
             this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // label5
             // 
