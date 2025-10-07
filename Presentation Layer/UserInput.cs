@@ -21,5 +21,9 @@ namespace Student_System_Manager.Presentation_Layer
         public string Course { get => course; set => course = value; }
 
         //
+        public void Person()
+        {
+            name = console.readline();
+        }
     }
 }
