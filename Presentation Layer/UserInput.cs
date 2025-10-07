@@ -23,7 +23,8 @@ namespace Student_System_Manager.Presentation_Layer
         //
         public void Person()
         {
-            name = console.readline();
+            name = Console.ReadLine();
+            StudentID = Console.ReadLine();
         }
     }
 }
