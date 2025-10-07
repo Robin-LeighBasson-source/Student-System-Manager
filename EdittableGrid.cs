@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Student_System_Manager.Data_Layer;
+using Student_System_Manager.Presentation_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +18,21 @@ namespace Student_System_Manager
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmHomeScreen frmHomeScreen = new frmHomeScreen();
+            this.Hide();
+            frmHomeScreen.Show();
+        }
+
+        private void btnViewAll_Click(object sender, EventArgs e)
+        {
+            FileHandler handler = new FileHandler();
+            List<UserInput> Students = handler.ViewAll();
+            dgvStudents.DataSource = Students;
+        }
+
+
     }
 }

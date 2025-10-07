@@ -37,7 +37,7 @@ namespace Student_System_Manager
             }
 
             FileHandler fileHandler = new FileHandler();
-            fileHandler.Student(userInput.StudentID,userInput.Name, userInput.Age, userInput.Course);
+            fileHandler.AddStudent(userInput.StudentID,userInput.Name, userInput.Age, userInput.Course);
 
             MessageBox.Show("Student saved successfully!");
 
