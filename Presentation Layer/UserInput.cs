@@ -38,7 +38,6 @@ namespace Student_System_Manager.Presentation_Layer
         public void CalcAge(DateTime DoB)
         {
             Age = DateTime.Now.Year - DoB.Year;
-            MessageBox.Show("All information has been added to the textfile");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Student_System_Manager.Presentation_Layer;
+﻿using Student_System_Manager.Data_Layer;
+using Student_System_Manager.Presentation_Layer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +34,9 @@ namespace Student_System_Manager
                 userInput.Course = cmbCourse.SelectedItem.ToString();
                 userInput.CalcAge(dtpDoB.Value);
             }
+
+            FileHandler fileHandler = new FileHandler();
+            fileHandler.Student(userInput.StudentID,userInput.Name, userInput.Age, userInput.Course);
 
         }
 
