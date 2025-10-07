@@ -47,7 +47,7 @@
             this.btnViewAllStudents.Name = "btnViewAllStudents";
             this.btnViewAllStudents.Size = new System.Drawing.Size(139, 34);
             this.btnViewAllStudents.TabIndex = 23;
-            this.btnViewAllStudents.Text = "View All Students";
+            this.btnViewAllStudents.Text = "Grid View";
             this.btnViewAllStudents.UseVisualStyleBackColor = true;
             this.btnViewAllStudents.Click += new System.EventHandler(this.btnViewAllStudents_Click);
             // 

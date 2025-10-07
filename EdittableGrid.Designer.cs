@@ -95,7 +95,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Name = "EdittableGrid";
-            this.Text = "EdittableGrid";
+            this.Text = "Students Viewer";
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.ResumeLayout(false);
 
