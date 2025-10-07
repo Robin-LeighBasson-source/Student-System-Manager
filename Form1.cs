@@ -29,7 +29,7 @@ namespace Student_System_Manager
             }
             else
             {
-                userInput.StudentID = edtName.Text;
+                userInput.StudentID = edtStudentID.Text;
                 userInput.Name = edtName.Text;
                 userInput.Course = cmbCourse.SelectedItem.ToString();
                 userInput.CalcAge(dtpDoB.Value);
