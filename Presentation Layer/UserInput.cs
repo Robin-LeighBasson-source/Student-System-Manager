@@ -16,7 +16,6 @@ namespace Student_System_Manager.Presentation_Layer
         string course;
 
         
-
         //Encapsulation
         public string Name { get => name; set => name = value; }
         public string StudentID { get => studentID; set => studentID = value; }
