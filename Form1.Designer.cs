@@ -39,11 +39,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.edtSurname = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnViewAllStudents
             // 
-            this.btnViewAllStudents.Location = new System.Drawing.Point(208, 246);
+            this.btnViewAllStudents.Location = new System.Drawing.Point(208, 287);
             this.btnViewAllStudents.Name = "btnViewAllStudents";
             this.btnViewAllStudents.Size = new System.Drawing.Size(139, 34);
             this.btnViewAllStudents.TabIndex = 23;
@@ -58,14 +60,14 @@
             "Diploma in Information Technology",
             "Bachelor of Information Technology",
             "Bachelor of Computing"});
-            this.cmbCourse.Location = new System.Drawing.Point(128, 199);
+            this.cmbCourse.Location = new System.Drawing.Point(128, 240);
             this.cmbCourse.Name = "cmbCourse";
             this.cmbCourse.Size = new System.Drawing.Size(219, 24);
             this.cmbCourse.TabIndex = 22;
             // 
             // btnEnter
             // 
-            this.btnEnter.Location = new System.Drawing.Point(63, 246);
+            this.btnEnter.Location = new System.Drawing.Point(63, 287);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(139, 34);
             this.btnEnter.TabIndex = 21;
@@ -85,7 +87,7 @@
             // 
             // dtpDoB
             // 
-            this.dtpDoB.Location = new System.Drawing.Point(128, 163);
+            this.dtpDoB.Location = new System.Drawing.Point(128, 204);
             this.dtpDoB.Name = "dtpDoB";
             this.dtpDoB.Size = new System.Drawing.Size(219, 22);
             this.dtpDoB.TabIndex = 19;
@@ -107,7 +109,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(67, 199);
+            this.label4.Location = new System.Drawing.Point(67, 240);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 16;
@@ -116,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 163);
+            this.label3.Location = new System.Drawing.Point(32, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 16);
             this.label3.TabIndex = 15;
@@ -140,11 +142,29 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Student ID";
             // 
+            // edtSurname
+            // 
+            this.edtSurname.Location = new System.Drawing.Point(128, 163);
+            this.edtSurname.Name = "edtSurname";
+            this.edtSurname.Size = new System.Drawing.Size(219, 22);
+            this.edtSurname.TabIndex = 25;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(67, 163);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Surname";
+            // 
             // frmHomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 322);
+            this.ClientSize = new System.Drawing.Size(400, 414);
+            this.Controls.Add(this.edtSurname);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnViewAllStudents);
             this.Controls.Add(this.cmbCourse);
             this.Controls.Add(this.btnEnter);
@@ -176,6 +196,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox edtSurname;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -23,7 +23,7 @@ namespace Student_System_Manager
         {
             UserInput userInput = new UserInput();
 
-            if (edtName.Text == "" || edtStudentID.Text == "" || cmbCourse.SelectedIndex == -1 || dtpDoB.Value >= DateTime.Now)
+            if (edtName.Text == "" || edtSurname.Text == "" ||edtStudentID.Text == "" || cmbCourse.SelectedIndex == -1 || dtpDoB.Value >= DateTime.Now)
             {
                 MessageBox.Show("Invalid input");
             }
@@ -31,6 +31,7 @@ namespace Student_System_Manager
             {
                 userInput.StudentID = edtStudentID.Text;
                 userInput.Name = edtName.Text;
+                userInput.Surname = edtSurname.Text;
                 userInput.Course = cmbCourse.SelectedItem.ToString();
                 userInput.CalcAge(dtpDoB.Value);
 
