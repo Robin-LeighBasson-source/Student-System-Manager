@@ -33,10 +33,13 @@ namespace Student_System_Manager
                 userInput.Name = edtName.Text;
                 userInput.Course = cmbCourse.SelectedItem.ToString();
                 userInput.CalcAge(dtpDoB.Value);
+
             }
 
             FileHandler fileHandler = new FileHandler();
             fileHandler.Student(userInput.StudentID,userInput.Name, userInput.Age, userInput.Course);
+
+            MessageBox.Show("Student saved successfully!");
 
         }
 
