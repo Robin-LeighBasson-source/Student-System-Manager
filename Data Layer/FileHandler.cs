@@ -47,8 +47,7 @@ namespace Student_System_Manager.Data_Layer
 
                     }
                 }
-            }
-            
+            }            
             return Students;
 
             
