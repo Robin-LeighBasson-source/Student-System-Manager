@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_System_Manager.Presentation_Layer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,7 @@ namespace Student_System_Manager.Business_Layer
 {
     internal class Logic
     {
+        
+
     }
 }
