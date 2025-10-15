@@ -52,5 +52,10 @@ namespace Student_System_Manager
             edittableGrid.Show();
             
         }
+
+        private void frmHomeScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

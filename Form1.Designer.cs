@@ -154,7 +154,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(67, 163);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.Size = new System.Drawing.Size(61, 16);
             this.label1.TabIndex = 24;
             this.label1.Text = "Surname";
             // 
@@ -178,6 +178,7 @@
             this.Controls.Add(this.label6);
             this.Name = "frmHomeScreen";
             this.Text = "Home Screen";
+            this.Load += new System.EventHandler(this.frmHomeScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
